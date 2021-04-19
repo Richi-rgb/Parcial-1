@@ -13,22 +13,22 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Parcial 1}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Desarrollo Parcial
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Sergio Giraldo Salazar y Ricardo Echeverri Cano}
             
         \vfill
             
         \vspace{0.8cm}
             
         \Large
-        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Departamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
         Marzo de 2021
@@ -38,71 +38,24 @@
 
 \tableofcontents
 \newpage
-\section{Sección introductoria}\label{intro}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Desarrollo del circuito}\label{Circuito}
+Para resolver el trabajo pedido empezamos organizando el circuito el cual permitira dar solución a lo pedido y a su vez posibilitara que el software haga su función de manera correcta.
 
-\section{Sección de contenido} \label{contenido}
-Esta sección es para agregar toda la información correspondiente con código, citas, etc.
-\subsection{Citación}
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
-Revisar en la última sección el formato de las referencias en IEEE.
-
-\subsection{Incluir código en el documento}
-%
-A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de programa que requieran una explicación adicional.
-\begin{lstlisting}[language=C++, label=codigo_ejemplo]
-// Programa desarrollado, compilado y ejecutado en https://www.onlinegdb.com
-#include <iostream>
-
-/*
- * Esto es un comentario de varias lineas
- */
-
-// Comentario de una sola linea
-
-#define N 10
-
-using namespace std;
-
-int main()
-{
-    
-    for( int i = 0 ; i < N ; i++ ){
-        
-        if( !(i % 2) )
-            cout << " El valor de i es -> " << i << endl;
-    }
-    
-    return 0;
-}
-
-//Resultado programa
-
-/*
-El valor de i es -> 0
-El valor de i es -> 2
-El valor de i es -> 4
-El valor de i es -> 6
-El valor de i es -> 8
-*/
-\end{lstlisting}
-En la sección \ref{imagenes}, se presentará como añadir ilustraciones al texto.
-
-\section{Inclusión de imágenes} \label{imagenes}
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
+En esta primera parte buscamos con que resistencias se podia trabajar para que los leds pudieran encender al máximo.
 
 \begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
+\includegraphics[width=10cm]{1.png}
 \centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
+\caption{Progreso 1}
+\label{fig:primeros pasos}
 \end{figure}
+Luego organizamos los circuitos integrados conectandolos al arduino y también a la matriz de leds.
 
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
+\begin{figure}[h]
+\includegraphics[width=10cm]{2.png}
+\centering
+\caption{Progreso 2}
+\label{fig:primeros pasos}
+\end{figure}
 
 \end{document}
